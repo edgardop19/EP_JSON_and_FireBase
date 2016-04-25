@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="#d6e3e5">
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="textPersonName"
+        android:text="Nombre"
+        android:id="@+id/editName"
+        android:layout_alignParentTop="true"
+        android:layout_toLeftOf="@+id/editLastName"
+        android:layout_toStartOf="@+id/editLastName"
+        android:layout_marginRight="73dp"
+        android:layout_marginEnd="73dp" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="textPersonName"
+        android:text="Apellido"
+        android:id="@+id/editLastName"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginRight="71dp"
+        android:layout_marginEnd="71dp" />
+
+    <Spinner
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/editGender"
+        android:layout_below="@+id/editLastName"
+        android:spinnerMode="dropdown"
+        android:layout_centerHorizontal="true" />
+
+    <LinearLayout
+        android:id="@+id/laytbtns"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_below="@+id/editGender" >
+        <Button
+            android:id="@+id/cancelBtn"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="5dp"
+            android:layout_weight="0.55"
+            android:text="Cancelar"/>
+        <Button
+            android:id="@+id/saveUserBtn"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:layout_weight="0.53"
+            android:text="Guardar" />
+    </LinearLayout>
+
+</RelativeLayout>
